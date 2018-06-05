@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Demo</title>
+</head>
+<body>
+	<!-- an example using the USGS elevation point query -->
+	<form action="https://nationalmap.gov/epqs/pqs.php" method="GET">
+		<label>
+			Longitude:
+			<input name="x" type="text" placeholder="Longitude" required>
+		</label>
+		<label for="Latitude">Latitude:</label>
+		<input id="Latitude" name="y" type="text" placeholder="Latitude" required>
+		
+		<label for="unit">Unit:</label>
+		<select name="unit">
+			<option value="Meters">Meters</option>
+			<option value="Feet">Feet</option>
+		</select>
+		<!-- <input id="unit" name="units" type="text" placeholder="Meters" value="Meters" required> -->
+		<input name="output" type="text" placeholder="json" value=json required>
+		<!-- <input type="submit"> -->
+		<button>Submit!</button>
+	</form>
+</body>
+</html>
