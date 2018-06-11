@@ -1,0 +1,23 @@
+
+/*https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048*/
+
+/* Type Selectors */
+
+li {}
+
+li a {} /* This is more specific than li {} */
+
+li + a {} /* This is more specific than li {} */
+
+/* Class, Attribute, and Pseudo-Class Selectors */
+/* An order of magnitude more specific than previous selector. */
+.hello {}
+
+input[type="text"] {}
+
+a:hover;
+input:checked;
+
+/* ID Selectors */
+/* An order of magnitude more specific than previous selector. */
+#hello
