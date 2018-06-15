@@ -1,0 +1,27 @@
+p {
+    /*Content - Width and Height*/
+
+    width: 50%;
+    /*height: 50px;*/
+
+    /*Border*/
+
+    border: 2px solid blue;
+
+    /*Padding*/
+
+    /*padding: 10px;*/
+    padding-left: 40px;
+
+    /*Margin*/
+    /*Setting the margin equal all around.*/
+    /*margin: 100px;*/
+
+    /*Setting the margin for top right bottom left*/
+    /*margin: 20px 40px 500px 100px;*/
+
+    /*Automatically set the margins*/
+    /*Set top bottom to zero and left right to auto*/
+    margin: 50px auto;
+}
+

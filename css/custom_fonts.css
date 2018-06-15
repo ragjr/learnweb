@@ -1,0 +1,22 @@
+/*https://fonts.google.com/*/
+
+/* From Google's font site I retrieved a couple of fonts and font styles. It gave me a link to embed into my HTML head:
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400|Shadows+Into+Light" rel="stylesheet">
+
+I could also change some of the webservice call parameters if I want to include different weights later. I do need to ensure that the fonts actually have those properties in order to call them. For example, Shadows+Into+Light only has one property while Raleway contains a host of different styles.
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,800|Shadows+Into+Light" rel="stylesheet">
+
+
+I also need to remember to change the stylesheet to this 'custom_fonts.css' since I'm calling these fonts in a new stylesheet.*/
+
+/*font-family*/
+
+h1 {
+    font-family: "Shadows Into Light";
+}
+
+p {
+    font-family: Raleway;
+}
