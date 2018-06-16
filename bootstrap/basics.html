@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Basics</title>
+    <!--This link refers to the bootstrap.css stored locally.-->
+    <!--<link type="text/css" rel="stylesheet" href="bootstrap.css">-->
+
+    <!--This link refers to a hosted bootstrap minified css.-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--Changing the default style for my first button.-->
+    <style type="text/css">
+        .btn-danger {
+            color: orange;
+            background: orangered;
+        }
+    </style>
+    <!--This demonstrates how I could overwrite a default Bootstrap style in order to apply my own styles. I would put it in a secondary css document after initially calling Bootstrap.-->
+    <link type="text/css" rel="stylesheet" href="bsoverwrite.css">
+</head>
+<body>
+    <h1>Bootstrap Basics</h1>
+
+    <div>
+        <button class="btn btn-danger btn-xs">Click me</button>
+        <button class="btn btn-success btn-xs active">Click me</button>
+        <button class="btn btn-success btn-xs" disabled="disabled">Click me</button>
+
+        <a href="http://www.getbootstrap.com" class="btn btn-info btn-lg">Bootstrap Docs</a>
+    </div>
+
+    <div class="notes">
+        <h2>Notes</h2>
+        <div><a href="https://getbootstrap.com/docs/4.0/migration/">Migration to Bootstrap 4</a></div>
+        <div><a href="https://www.youtube.com/watch?v=NHHh0sj1uKY">YelpCamp migration to Bootstrap 4</a></div>
+    </div>
+
+
+</body>
+</html>
