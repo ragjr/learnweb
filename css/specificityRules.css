@@ -1,34 +1,33 @@
 
-/* element Selector */
-li {
-    border: 1px solid red;
-}
+/*https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048*/
 
-/* id Selector */
-/* id is unique in each HTML. */
-#special {
-    background-color: yellow;
-}
+/* Type Selectors */
 
-/* class Selector */
-.completed {
-    text-decoration: line-through;
-}
-
-/* Star Selector */
-/* Apply to all the elements in a document. */
-* {
-    /* Ex: wrap each element in a light gray solid border */
-    border: 1px solid lightgray;
-}
+li {}
 
 /* Descendant Selector */
 /* Select all elements within a designated element*/
+/* This is more specific than li {} */
 li a {} /* Ex: select all anchor tags <a> inside a list element <li> */
 
 /* Adjacent Selector */
 /* Select all elements where an element is next to another. */
+/* This is more specific than li {} */
+li + a {}
 h4 + ul {} /* Ex: select all unordered lists <ul> that are after heading 4 <h4> */
+
+/* Class, Attribute, and Pseudo-Class Selectors */
+/* An order of magnitude more specific than previous selector. */
+.hello {}
+
+input[type="text"] {}
+
+a:hover;
+input:checked;
+
+/* ID Selectors */
+/* An order of magnitude more specific than previous selector. */
+#hello
 
 /* Attribute Selector */
 /* Select all elements where a particular condition applies. */
