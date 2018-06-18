@@ -16,10 +16,12 @@
             background: orangered;
         }
     </style>
+
     <!--This demonstrates how I could overwrite a default Bootstrap style in order to apply my own styles. I would put it in a secondary css document after initially calling Bootstrap.-->
     <link type="text/css" rel="stylesheet" href="bsoverwrite.css">
 </head>
 <body>
+
     <h1>Bootstrap Basics</h1>
 
     <div>
@@ -30,12 +32,55 @@
         <a href="http://www.getbootstrap.com" class="btn btn-info btn-lg">Bootstrap Docs</a>
     </div>
 
+<!--Containerized Jumbotron and other elements-->
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1>This is a jumbotron</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda culpa dignissimos est ex facere fuga, harum iure labore maxime neque numquam officiis quidem quos sit? Consectetur consequuntur cupiditate libero.</p>
+            <button class="btn btn-success">Hi There</button>
+        </div>
+
+        <!--Other elements added to the container adhere to the containers formatting.-->
+        <!--Adding a basic form group.-->
+        <form>
+            <div class="form-group">
+                <div class="form-inline">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                    </div>
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-addon" id="basic-addon2">@example.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-addon">.00</span>
+                </div>
+            </div>
+            <label for="basic-url">Your vanity URL</label>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+
+        </form>
+
+    </div>
+
+    <!---------------------------------------------------------------------------->
     <div class="notes">
         <h2>Notes</h2>
         <div><a href="https://getbootstrap.com/docs/4.0/migration/">Migration to Bootstrap 4</a></div>
         <div><a href="https://www.youtube.com/watch?v=NHHh0sj1uKY">YelpCamp migration to Bootstrap 4</a></div>
     </div>
-
 
 </body>
 </html>
