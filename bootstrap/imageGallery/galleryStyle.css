@@ -1,0 +1,26 @@
+/*http://fontawesome.io*/
+
+body {
+    padding-top: 70px;
+}
+
+.jumbotron {
+    color: #2c3e50;
+    background-color: #ecf0f1;
+}
+
+.navbar-inverse {
+    background-color: #2d3e50;
+}
+
+.navbar-inverse .navbar-nav li a {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+i {
+    margin-right: 5px;
+}
