@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Arrays</title>
+    <script type="text/javascript" src="js-arrays.js"></script>
+</head>
+<body>
+    <h2>Arrays are:</h2>
+    <p>I know arrays as Python lists or Numpy arrays.</p>
+
+    <pre>
+        <code>
+            // This code is heavily repeated.
+
+            var friend1 = "Charlie";
+            var friend2 = "Liz";
+            var friend3 = "David";
+            var friend4 = "Mattias";
+
+            // This is a JavaScript array
+
+            var friends = ["Charlie", "Liz", "David", "Mattias"];
+            // or
+            var friends = new Array("Charlie", "Liz", "David", "Mattias");
+
+            // Arrays are 0 (zero) indexed.
+
+            > friends[1]
+            < "Liz"
+
+            // Index can be used to update existing entries.
+
+            > friends[0] = "Chuck";
+            > friends[0]
+            < "Chuck"
+
+            // Add new friends by adding an index that doesn't exist.
+
+            > friends[5] = "Amelia";
+            > friends[5]
+            < "Amelia"
+
+            // Notice that I skipped index 4 and added Amelia at index 5.
+            // If I try and run friends[4] it returns "undefined".
+
+            > friends[4]
+            < undefined
+
+            > friends
+            < (6) ["Chuck", "Liz", "David", "Mattias", empty, "Amelia"]
+        </code>
+    </pre>
+</body>
+</html>
