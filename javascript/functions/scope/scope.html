@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scope Examples</title>
+    <script type="text/javascript" src="scope.js"></script>
+</head>
+<body>
+    <h1>Introduction to JS Scope</h1>
+    <p>Scope is the <b>context</b> that code is executed in.</p>
+
+    <pre>
+        <code>
+            function doMath() {
+                var x = 40;
+                console.log(x);
+            }
+        </code>
+    </pre>
+    <p>Executing doMath() returns 40 but x doesn't live in the global scope.</p>
+
+    <pre>
+        <code>
+            var y = 99;
+
+            function doMoreMath() {
+                y = 100;
+                console.log(y);
+            }
+        </code>
+    </pre>
+    <p>Executing doMoreMath() returns y as 100 and changes y in the global scope to 100, because we didn't declare it as a new variable in the function.</p>
+
+    <h2>Higher Order Functions</h2>
+
+    <pre>
+        <code>
+            function sing() {
+                console.log("row row row your boat...");
+                console.log("gently down the stream...");
+            }
+        </code>
+        <code>
+            > setInterval(sing, 1000);
+            < 494 <-- Ensure you capture the number shown in the console so you can quit the setInterval function. -->
+        </code>
+        <code>
+            clearInterval(494) <-- Stops setInterval(). -->
+        </code>
+        <code>
+            setInterval(function(){
+                console.log("I am an anonymous function!");
+                console.log("THIS IS AWESOME!");
+            }, 2000);
+        </code>
+    </pre>
+</body>
+</html>
