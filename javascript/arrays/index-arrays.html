@@ -51,5 +51,75 @@
             < (6) ["Chuck", "Liz", "David", "Mattias", empty, "Amelia"]
         </code>
     </pre>
+    <pre>
+        <code>
+            // push() adds an element to the end of an array.
+
+            var colors = ["red", "orange", "yellow"];
+            colors.push("green");
+
+            // pop() removes the last element from an array.
+
+            var colors = ["red", "orange", "yellow"];
+            colors.pop();
+
+            // unshift() adds element to the beginning of an array.
+
+            var colors = ["red", "orange", "yellow"];
+            colors.unshift("green");
+
+            // shift() removes an element from the beginning of an array.
+
+            var colors = ["red", "orange", "yellow"];
+            colors.shift();
+
+            // indexOf() finds the first index of the given element.
+            var friends = ["Charlie", "Liz", "David", "Mattias", "Liz"];
+            friends.indexOf("Liz"); // returns 1 not 4
+
+            // slice() creates a new array with elements from another array specified by the index. Similar to Python's list()[#;#].
+            var fruits = ["banana", "orange", "lemon", "apple", "mango"];
+            var citrus = fruits.slice(1, 3); // first number is inclusive and the last is exclusive.
+            var fruitsAll = fruits.slices() // copies all the elements.
+        </code>
+    </pre>
+    <pre>
+        <code>
+            // Nested arrays
+
+            var friendGroups = [
+                ["Harry", "Ron", "Hermione"],
+                ["Malfoy", "Crabbe", "Goyle"],
+                ["Mooney", "Wormtail", "Prongs"]
+            ];
+
+            console.log(friendGroups[2]) // returns third array
+            console.log(friendGroups[2][0]) // returns "Mooney"
+        </code>
+    </pre>
+    <pre>
+        <code>
+            // Array iteration
+
+            var colors = ["red", "orange", "yellow", "green"];
+
+            for(var i = 0; i < colors.length; i++) {
+                console.log(colors[i]);
+            }
+
+            // or use forEach() with an anonymous function like python map()
+
+            colors.forEach(function(color) {
+                console.log(color);
+            });
+
+            // You can also define a function and call it using forEach.
+
+            function printColor(color) {
+                console.log(color);
+            };
+            colors.forEach(printColor);
+        </code>
+    </pre>
 </body>
 </html>
